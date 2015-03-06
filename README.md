@@ -1,3 +1,6 @@
+**This plugin is no longer supported. Please use embulk-input-jdbc's `query` option.**
+
+
 # SQL input plugin for Embulk
 
 SQL input plugin for Embulk loads records to databases using custom SELECT statement.
