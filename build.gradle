@@ -38,12 +38,12 @@ task gemspec << { file("build/gemspec").write($/
 Gem::Specification.new do |spec|
   spec.name          = "${project.name}"
   spec.version       = "${project.version}"
-  spec.authors       = ["SET_ME_LOCALLY"]
+  spec.authors       = ["kakusuke"]
   spec.summary       = %[Sql input plugin for Embulk]
   spec.description   = %["Loads records from Sql."]
-  spec.email         = ["SET_ME_LOCALLY"]
+  spec.email         = ["bananafishmonger+github@gmail.com"]
   spec.licenses      = ["MIT"]
-  # TODO set this: spec.homepage      = "https://github.com/SET_ME_LOCALLY/embulk-input-sql"
+  spec.homepage      = "https://github.com/kakusuke/embulk-input-sql"
 
   spec.files         = `git ls-files`.split("\n") + Dir["classpath/*.jar"]
   spec.test_files    = spec.files.grep(%r"^(test|spec)/")
